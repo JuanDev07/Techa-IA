@@ -65,9 +65,9 @@ Para desarrollo local, la aplicación se ejecuta en modo debug, por lo que cualq
 deactivate/Control + C parar el debug
 
 **Datos de los paneles:**
-CIGS: Miasolé FLEX–02 120 N, area:  0.94 m2
-HIT: Panasonic VBHN330SJ47, 1.67 m2
-m-Si: Znshine solar ZX55(17.8)M, area: 0.43 m2
+CIGS: Miasolé FLEX–02 120 N, area:  0.94 m²
+HIT: Panasonic VBHN330SJ47, 1.67 m²
+m-Si: Znshine solar ZX55(17.8)M, area: 0.43 m²
 
 **Donde los usuarios pueden encontrar ayuda sobre su proyecto**
 bootcampgrupo4@gmail.com
