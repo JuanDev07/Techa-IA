@@ -1,4 +1,4 @@
-# Título
+# Predicción con machine learning de la generación de energía solar a partir de la radiación y temperatura ambiente de 3 tipos de paneles solares con base en el algoritmo Random Forest Regressor
 
 Este proyecto es una aplicación web construida con Flask que predice la potencia de un panel solar basado en la temperatura, radiación solar y tipo de panel ingresados por el usuario. Utiliza un modelo de aprendizaje automático previamente entrenado y almacenado en `modelo.pkl`, y un escalador en `escalador.pkl` para normalizar los datos.
 
