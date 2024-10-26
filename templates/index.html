@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicción de Potencia de Paneles Solares</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px; /* Ajusta el ancho según tus necesidades */
+            text-align: center; /* Centrar el texto */
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        #resultado {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e8f0fe; /* Color de fondo para el resultado */
+            border: 1px solid #b2c8fd; /* Borde para el resultado */
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Calcula la Potencia de un Panel Solar</h1>
+        <form action="/predict" method="POST">
+            <label for="temperatura">Temperatura (°C):</label>
+            <input type="number" step="0.1" id="temperatura" name="temperatura" required>
+            <br><br>
+
+            <label for="radiacion">Radiación Solar (W/m²):</label>
+            <input type="number" step="0.1" id="radiacion" name="radiacion" required>
+            <br><br>
+
+            <label for="tipo_panel">Selecciona el tipo de panel:</label>
+            <select id="tipo_panel" name="tipo_panel" required>
+                <option value="CIGS">CIGS</option>
+                <option value="HIT">HIT</option>
+                <option value="m-Si">m-Si</option>
+            </select>
+            <br><br>
+
+            <button type="submit">Calcular Potencia</button>
+        </form>
+
+        <div id="resultado">
+            {% if potencia is not none %}
+                <h2>Potencia Predicha: {{ potencia }} W</h2>
+                <h3>Tipo de Panel: {{ tipo_panel }}</h3> <!-- Mostrar tipo de panel -->
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
+
+
+
