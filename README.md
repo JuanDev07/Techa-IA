@@ -35,8 +35,10 @@ Este proyecto es una aplicación web construida con Flask que predice la potenci
    git clone https://github.com/tu_usuario/tu_repositorio.git
    cd tu_repositorio
 
-2. ** Descarga 
-
+2. ** Descargar archivos necesarios desde Google Colab
+     files.download('modelo.pkl')
+     files.download('escalador.pkl')
+ 
 3. ** Crea y active un entorno virtual:**
    python3 -m venv venv
    source venv/bin/activate  # En Windows usa `venv\Scripts\activate`
